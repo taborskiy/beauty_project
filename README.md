@@ -1,16 +1,52 @@
-# React + Vite
+# Beauty Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Адаптивний beauty-лендінг, реалізований як тестове frontend-завдання.
 
-Currently, two official plugins are available:
+Репозиторій: [github.com/taborskiy/beauty_project](https://github.com/taborskiy/beauty_project/tree/main)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Live demo: [test-react-app-2ac17.web.app](https://test-react-app-2ac17.web.app/)
 
-## React Compiler
+## Реалізовано
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Перший і другий слайди за макетом.
+- Адаптивна верстка для Desktop і Mobile.
+- Scroll-паралакс фонової композиції та декоративних елементів.
+- Інтерактивний before/after-повзунок.
+- Підтримка миші, touch-пристроїв, стилуса та клавіатури.
+- Плавна reveal-анімація текстових плашок при потраплянні у viewport.
+- Підтримка `prefers-reduced-motion`.
 
-## Expanding the ESLint configuration
+Третій слайд свідомо пропущено, щоб зосередитися на якості, адаптивності та функціональності перших двох.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Технології
+
+- React
+- Vite
+- SCSS
+- Intersection Observer API
+- Pointer Events API
+
+Сторонні UI-бібліотеки та бібліотеки для анімацій або before/after-повзунка не використовувалися.
+
+## Запуск
+
+```bash
+npm install
+npm run dev
+```
+
+## Фактичний час
+
+**6 годин.**
+
+## Складнощі під час роботи
+
+Основна складність виникла під час отримання графічних матеріалів із Figma. Не всі зображення можна було коректно експортувати безпосередньо, тому довелося використовувати додаткові інструменти для їх отримання та підготовки.
+
+Також під час роботи потрібно було:
+
+- адаптувати насичену графічну композицію під Desktop і Mobile;
+- реалізувати плавний паралакс без появи порожніх країв;
+- синхронізувати різну швидкість руху фону, декоративних елементів і тексту;
+- реалізувати before/after-повзунок з однаково коректною роботою миші, touch і стилуса;
+- адаптувати розміри карток, тексту та інтерактивних елементів під мобільний макет.

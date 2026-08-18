@@ -16,6 +16,7 @@ export function SkinConcerns() {
 
     const revealElements = section.querySelectorAll('[data-reveal]')
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const isMobile = window.matchMedia('(max-width: 480px)').matches
 
     if (reduceMotion || !('IntersectionObserver' in window)) {
       revealElements.forEach((element) => element.classList.add('is-visible'))
@@ -32,8 +33,8 @@ export function SkinConcerns() {
         })
       },
       {
-        threshold: 0.18,
-        rootMargin: '0px 0px -8% 0px',
+        threshold: isMobile ? 0.01 : 0.18,
+        rootMargin: isMobile ? '0px 0px -5% 200px' : '0px 0px -8% 0px',
       },
     )
 
