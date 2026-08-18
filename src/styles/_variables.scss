@@ -1,0 +1,36 @@
+$font-main: 'Inter', 'Arial', sans-serif;
+$container-width: 1200px;
+
+$bg-page: #ffffff;
+$bg-panel: #faf8f5;
+$bg-card: #ffffff;
+$bg-card-strong: #6f7d64;
+$bg-dark: #000000;
+
+$text-main: #000000;
+$text-heading: #2c2416;
+$text-soft: #5d5d5d;
+$accent: #6f7d64;
+$accent-soft: rgba(111, 125, 100, 0.3);
+$line: #e8d5c4;
+$after-accent: #f08281;
+$divider: #99a1af;
+
+$shadow-card: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+$shadow-card-soft: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+$shadow-chip: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+$radius-card: 36px;
+$radius-icon: 24px;
+$radius-panel: 20px;
+$radius-pill: 9999px;
+
+$hero-title-size: 40px;
+$hero-title-line: 50px;
+$hero-body-size: 18px;
+$hero-body-line: 29px;
+$section-title-size: 52px;
+$section-title-line: 65px;
+$card-text-size: 17px;
+$card-text-line: 29px;
